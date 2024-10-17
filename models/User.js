@@ -13,11 +13,7 @@ const UserSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    },
-    avatar: {
-        type: Number,
-        required: true
-    },
+    }
 }, { timestamps: true }); //it gonna give created and updated at times
 
 export default mongoose.model("User", UserSchema);

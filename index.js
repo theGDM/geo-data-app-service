@@ -5,7 +5,6 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoute from './routes/auth.js';
 import userRoute from './routes/user.js';
-import taskRoute from './routes/task.js';
 
 const app = express();
 dotenv.config(); //to use .env we have to make some configuration
