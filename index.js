@@ -5,6 +5,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoute from './routes/auth.js';
 import userRoute from './routes/user.js';
+import geoDataRoute from './routes/geoData.js';
 
 const app = express();
 dotenv.config(); //to use .env we have to make some configuration
@@ -36,6 +37,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
+app.use("/api/geojsons", geoDataRoute);
 
 //error handling middleware
 app.use((err, req, res, next) => {

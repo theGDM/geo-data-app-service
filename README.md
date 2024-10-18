@@ -1,3 +1,3 @@
 # Backend Service
 
-This backend service is created for the Voosh assignment.
+This backend service is created for the Geo Data App.
