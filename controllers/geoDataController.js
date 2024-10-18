@@ -12,10 +12,12 @@ export const getAllGeoJsonForUser = async (req, res, next) => {
 
 export const createGeoJson = async (req, res, next) => {
     const userId = req.params.userId;
-    const { geoData } = req.body;
+    const { geoData, title, description } = req.body;
 
     const newGeoJson = await GeoJson({
         userId: userId,
+        title: title,
+        description: description,
         geoData: geoData
     });
 

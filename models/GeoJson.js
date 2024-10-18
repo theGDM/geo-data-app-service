@@ -5,6 +5,14 @@ const geoSchema = new mongoose.Schema({
         type: Schema.ObjectId,
         required: true
     },
+    title: {
+        type: String,
+        required: true,
+    },
+    description: {
+        type: String,
+        required: true,
+    },
     geoData: {
         type: Schema.Types.Mixed, // Allows geoData to be stored as a dynamic object
         required: true
